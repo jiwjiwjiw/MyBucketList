@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>My Bucket List</title>
+  </head>
+  <body>
+
+    <!-- Start header section -->
+    <header class="banner">
+      <div class="global-header">
+        <div class="content-wrapper">
+          <a class="logo" href="/"><span><em>My</em> Bucket List</span></a>
+          <form class="search" action="ideas" method="get">
+            <label for="cta-search-input">Search</label>
+            <input id="cta-search-input" type="text" name="search" placeholder="E.g. driving a racecar">
+            <button type="submit">Search</button>
+          </form>
+          <nav>
+            <ul class="clearfix">
+              <li><a href="inspiration.html">Inspiration</a></li>
+              <li><a href="forms/sign-up.html">Sign Up</a></li>
+              <li><a href="forms/login.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="masthead">
+        <div class="content-wrapper">
+          <h1>Get inspired. Create your bucket list. Share.</h1>
+          <form class="search" action="ideas" method="get">
+            <label for="global-search-input">Inspire me</label>
+            <input id="global-search-input" type="text" name="search" placeholder="E.g. Swimming with dolphins">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start main section -->
+    <main>
+      <div class="content-wrapper">
+        <h2>Some ideas</h2>
+        <ul class="bare-list">
+          <li class="card">
+            <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+              <img src="assets/images/northern-lights-small.jpg" alt="Northern lights above a house at night" />
+              <div class="card__intro">
+                <h3 class="card__title">See the northern lights.</h3>
+                <span>1523 people doing this...</span>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="card__actions__form__like"type="submit" name="action" value="like">Like</button>
+              <button class="card__actions__form__add-goal" type="submit" name="action" value="add-goal">Add goal</button>
+            </form>
+          </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/swim-with-dolphins.html">
+              <img src="assets/images/dolphins-small.jpg" alt="Dolphins swimming together at sea surface">
+              <div class="card__intro">
+                <h3 class="card__title">Swim with dolphins.</h3>
+                <span>1523 people doing this...</span>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="card__actions__form__like"type="submit" name="action" value="like">Like</button>
+              <button class="card__actions__form__add-goal" type="submit" name="action" value="add-goal">Add goal</button>
+            </form>
+          </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/dance-like-nobody-is-watching.html">
+              <img src="assets/images/dancing-small.jpg" alt="Man dancing while other people are looking elsewhere">
+              <div class="card__intro">
+                <h3 class="card__title">Dance like nobody's watching.</h3>
+                <span>1523 people doing this...</span>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="card__actions__form__like"type="submit" name="action" value="like">Like</button>
+              <button class="card__actions__form__add-goal" type="submit" name="action" value="add-goal">Add goal</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Start footer section -->
+    <footer class="global-footer">
+      <div class="content-wrapper">
+        <ul>
+          <li class="logo"><a href="/"><span><em>My</em> Bucket List</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="styleguide.html">Style Guide</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+        <p>&copy; EPFL 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>

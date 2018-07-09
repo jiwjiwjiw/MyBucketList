@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Log in form template</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Log In</h1>
+        <p>Not a member? <a href="sign-up.html">Sign Up</a></p>
+      </header>
+      <main>
+        <form class="logIn" action="login" method="post">
+          <div class="alert alert--wide">
+            Server side validation message goes here.
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="email">Email</label>
+            <input id="email" class="input-group__field" type="email" name="email" placeholder="diana.prince@wonder.com">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="password">Password</label>
+            <input id="password" class="input-group__field" type="password" name="password">
+          </div>
+          <div>
+            <a href="retrieve_password.html">Forgot password?</a>
+          </div>
+          <div class="prompt">
+            <button class="btn btn--primary prompt__confirm" type="submit">Log in</button>
+          </div>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>

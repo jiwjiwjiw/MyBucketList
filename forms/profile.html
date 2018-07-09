@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile form template</title>
+  </head>
+  <body>
+    <form class="profile" action="profile" method="post">
+      <div class="alert alert--wide">
+        Server side validation message goes here.
+      </div>
+      <div class="input-group input-group--horizontal">
+        <label class="input-group__label" for="full-name">Full name</label>
+        <input id="full-name" class="input-group__field" type="text" name="full-name" placeholder="E.g. Diana Prince">
+      </div>
+      <div class="input-group input-group--horizontal">
+        <label class="input-group__label" for="profile-picture">Add an image</label>
+        <input id="profile-picture" class="input-group__field" type="file" name="profile-picture" accept="image/*">
+      </div>
+      <div class="input-group input-group--horizontal">
+        <label class="input-group__label" for="goal-description">Description</label>
+        <textarea id="goal-description" class="input-group__field" name="goal-description"></textarea>
+      </div>
+      <div class="prompt">
+        <a class="prompt__cancel" href="cancel.html">Cancel</a>
+        <button class="btn btn--primary prompt__confirm" type="submit">Update profile</button>
+      </div>
+    </form>
+  </body>
+</html>
